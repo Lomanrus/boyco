@@ -59,7 +59,7 @@ export default {
         item.type = 'pay';
         item.name = data.operationName;
         item.sum = data.operationSum;
-        if (item.sum <= this.budget) {
+        if (item.sum <= this.excess) {
           this.allPayments.push(item);
           this.excess = this.budget - data.operationSum;
         } else {

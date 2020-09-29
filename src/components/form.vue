@@ -21,17 +21,17 @@ export default {
     addMoney: function () {
       this.$emit('addMoney', {operationName:this.operationName,operationSum: this.operationSum})
       this.operationName=''
-      this.operationSum = 0
+      this.operationSum = null
     },
     setBudget() {
       this.$emit('setBudget', this.operationSum)
       this.operationName=''
-      this.operationSum = 0
+      this.operationSum = null
     },
     addPayment() {
       this.$emit('addPayment', {operationName:this.operationName,operationSum: this.operationSum})
       this.operationName=''
-      this.operationSum = 0
+      this.operationSum = null
     }
   }
 }
